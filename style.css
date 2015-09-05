@@ -61,6 +61,18 @@ address {
   width: 4.5em;
 }
 
+.info .season {
+  font-size: 44pt;
+  line-height: 42pt;
+
+  font-family: "Cooper Hewitt", Impact, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
 .lectures {
   background: rgb(228, 253, 54);
 }
