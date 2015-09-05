@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  /* Flex box ... */
+  display: flex;
+  align-items: stretch;
+  flex-direction: row-reverse;
+
+  margin: 0;
+  min-height: 100%;
+}
+
+h1 {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: black;
+}
+
+.info,
+.lectures {
+  width: 50%;
+  padding: 35px 40px;
+}
+
+.info {
+  background: black;
+  color: white;
+}
+
+.lectures {
+  background: rgb(228, 253, 54);
+}
