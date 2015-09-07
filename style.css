@@ -1,3 +1,29 @@
+/*
+
+  #Fall 2015 Otis Workshop
+  --
+  This is a cascading style sheet file (.css)
+
+  CSS is the language the browser uses to interpret how elements on a web page should look. HTML is the structure of a web page while CSS is what defines the visual feel of the web page. You can test this out by commenting out the link to the style sheet on the example page.
+
+  In order to use CSS, you begin by specifying the element and then defining the specific properties. If I wanted to change the color of some text, the CSS property I would be define is "color."
+
+  p { color: red; }
+
+  In the above example, "p" represents the HTML paragraph tag. The properties are wrapped in brackets. The CSS property "color" defines the color of the paragraph tag and is separated from the property value with a colon. The individual property is the closed with a semi-colon.
+
+  ##Classes, IDs, and Element Selectors
+
+  ##Common CSS Properties
+  ###Layout
+  ###Typography
+*/
+
+
+
+/*
+  The "*" is the universal selector, it will apply the css properties to everything. In this case we are defining the box-sizing property which controls how the browser renders height and width.
+*/
 * {
   box-sizing: border-box;
 }
@@ -21,6 +47,8 @@ body {
   line-height: 16pt;
 }
 
+/* Typography */
+
 h1,
 h2 {
   font-family: "Cooper Hewitt", Impact, sans-serif;
@@ -42,6 +70,8 @@ a {
 address {
   font-style: normal;
 }
+
+/* Layout */
 
 .info,
 .lectures {
