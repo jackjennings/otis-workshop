@@ -5,33 +5,6 @@
 
   HTML stands for HyperText Markup Language. It is a bunch of text saved as a document type which your browser identifies as using HTML. All an HTML document does is provide a set of instructions that a web browser reads and renders. The page is made up of "tags" which tells the browser to do things like display images, add linke breaks, and more. HTML is then styled using CSS (Cascading Stylesheets).
 
-  #################################
-  What are tags?
-  #################################
-
-  HTML tags specify certain elements on the page so a web browser knows how to render them.
-
-  <html> </html>
-
-  The above tags are the HTML tags. Your entire document goes in between these tags. All tags start and end with a greater than symbol. They're called tags, because these symbols make them look like tags. Ending tags have a backslash before the final symbol. The backslash "/" desginates the closing tag. For example if you want to make some text bold, you can wrap the text with two "strong" tags, with a backslash in the closing tag.
-
-  <strong>Bold text!</strong>
-
-  Some tags are self-closing, because they don't have anything that would go inbetween them. An example of this would be an image tag.
-
-  <img src="imagename.jpg" width="300" height="200" />
-
-  The image tag above is self-closing, it features a backslash at the end of the closing symbol. Within the image tag are ATTRIBUTES. These attributes, such as "src", "width", and "height" define information about that tag. For the image tag, it requires the source which is simply "src" followed by an equals sign and two quotes.
-
-  Some basic HTML tags are... (http://www.simplehtmlguide.com/cheatsheet.php)
-    <h?> ... </h?>          Headings (?= 1 for largest to 6 for smallest, eg h1)
-    <p> ... </p>            Paragraph of text
-    <a href="url"> ... </a> Basic Link
-    <strong> ... </strong>  Bold (strong)
-    <em> ... </em>          Italics (emphasis)
-    <img src="url" />       Image Tag
-    <div> ... </div>        Division (or section) of Page Content
-
   ####################################
   HTML Document Structure
   ####################################
@@ -50,13 +23,43 @@
 
   We begin defining the "DOCTYPE" of the document, which is basically a declaration of the rules you're following in your HTML document. It becomes useful when you want to validate your code (to see if you made any mistakes). We now use what's called "HTML5", which is defined simply with "html". Next we add an HTML tag, which wraps everything else. It tells the browser that the markup is hypertext. Then we have a "head" and a "body". The "head" tag is where we store non-visible information about the document. We define the "title" of the web page there, link to external style sheets/javascript files, and store search engine meta data. The "body" is where all of the content lives.
 
-  Divs and Section Elements
+  ## Divs and Section Elements
+
 
   Semantic HTML
+
+  #################################
+  What are tags?
+  #################################
+
+  HTML tags specify certain elements on the page so a web browser knows how to render them.
+
+  <html> </html>
+
+  The above tags are the HTML tags. Your entire document goes in between these tags. All tags start and end with a greater than symbol. They're called tags, because these symbols make them look like tags. Ending tags have a backslash before the final symbol. The backslash "/" desginates the closing tag. For example if you want to make some text bold, you can wrap the text with two "strong" tags, with a backslash in the closing tag.
+
+  <strong>Bold text!</strong>
+
+  Some tags don't need to be closed, because they don't have anything that would go inbetween them. An example of this would be an image tag.
+
+  <img src="imagename.jpg" width="300" height="200">
+
+  The image tag above is self-closing, it features a backslash at the end of the closing symbol. Within the image tag are ATTRIBUTES. These attributes, such as "src", "width", and "height" define information about that tag. For the image tag, it requires the source which is simply "src" followed by an equals sign and two quotes.
+
+  Some basic HTML tags are... (http://www.simplehtmlguide.com/cheatsheet.php)
+    <h?> ... </h?>          Headings (?= 1 for largest to 6 for smallest, eg h1)
+    <p> ... </p>            Paragraph of text
+    <a href="url"> ... </a> Basic Link
+    <strong> ... </strong>  Bold (strong)
+    <em> ... </em>          Italics (emphasis)
+    <img src="url" />       Image Tag
+    <div> ... </div>        Division (or section) of Page Content
+
 
   ####################################
   Linking to an external style sheet
   ####################################
+
 -->
 
 
@@ -66,11 +69,10 @@
   <head>
     <title>Otis Visiting Artist Lecture Series</title>
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <div class="info">
+    <div id="info">
 
       <header>
         <h1>Otis Visiting Artist Lecture Series</h1>
@@ -122,11 +124,15 @@
 
     </div>
 
-    <div class="lectures">
+    <div id="lectures">
 
       <div class="lecture">
-        <div class="date">September 8 : 11AM &mdash; 12:30PM</div>
-        <div class="lecturer">matthew brandt</div>
+        <div class="date">
+          September 8
+        </div>
+        <div class="lecturer">
+          matthew brandt
+        </div>
       </div>
 
       <div class="lecture">
